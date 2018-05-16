@@ -1,0 +1,19 @@
+<h3>{{ booText }}</h3>
+
+<p>{{ jokeAnswer }}</p>
+
+<button id="joke" type="button" [disabled]="disableButton" (click)="onClick($event)">Quero ver!</button>
+
+<br/>
+<br/>
+
+<input type="text" class="form-control" [(ngModel)]="jokeAnswer">
+
+<div [hidden]="!showJoke">
+  {{ joke }}
+
+  <br/>
+  <br/>
+
+
+</div>
